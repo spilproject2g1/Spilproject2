@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 129191247}
   m_Layer: 0
-  m_Name: Camera_Pos_01
+  m_Name: CamPos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,7 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 409302101}
   m_Layer: 0
-  m_Name: Camera_Pos_03
+  m_Name: CamPos3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -754,7 +754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1770904728}
   m_Layer: 0
-  m_Name: Camera_Pos_04
+  m_Name: CamPos4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -877,7 +877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1954930289}
   m_Layer: 0
-  m_Name: Camera_Pos_02
+  m_Name: CamPos2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
