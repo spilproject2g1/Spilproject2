@@ -33,9 +33,4 @@ public class Player_Controller : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-
-
-
-
 }
