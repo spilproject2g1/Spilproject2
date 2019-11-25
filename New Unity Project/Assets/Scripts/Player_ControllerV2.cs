@@ -25,7 +25,12 @@ public class Player_ControllerV2 : MonoBehaviour
     {
         movement = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")) * speed * Time.deltaTime;
         movement = camara.rotation * movement;
-        movement.y = 0f;
+        movement.y = rb.velocity.y;
         rb.velocity = movement;
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            //interract
+        }
     }
 }
