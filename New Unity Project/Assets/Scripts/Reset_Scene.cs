@@ -12,7 +12,7 @@ public class Reset_Scene : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("r"))
+        if (Input.GetKeyDown(KeyCode.R))
 
             SceneManager.LoadScene("SampleScene");
     }
