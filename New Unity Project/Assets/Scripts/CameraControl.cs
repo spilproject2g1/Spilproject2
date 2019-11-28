@@ -18,7 +18,7 @@ public class CameraControl : MonoBehaviour
     {
         movelength = Vector3.Distance(startPos.position, targetPos.position);
         startTime = Time.time;
-        moveSpeed = 0.1f;
+        moveSpeed = 0.01f;
         transform.position = new Vector3(camPos[0].transform.position.x, camPos[0].transform.position.y, camPos[0].transform.position.z);
         transform.eulerAngles = new Vector3(35, 45, 0);
         currentCamPos = 1f;
@@ -105,35 +105,35 @@ public class CameraControl : MonoBehaviour
     {
         transform.position = Vector3.Lerp(startPos.position, targetPos.position, Time.time * moveSpeed);
         transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, Time.time * moveSpeed);
-        yield return new WaitForSecondsRealtime(0.25f);
+        yield return new WaitForSecondsRealtime(3f);
         currentCamPos = 1f;
-        yield return null;
+        yield break;
     }
 
     IEnumerator changePosTo2ndCO()
     {
         transform.position = Vector3.Lerp(startPos.position, targetPos.position, Time.time * moveSpeed);
         transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, Time.time * moveSpeed);
-        yield return new WaitForSecondsRealtime(0.25f);
+        yield return new WaitForSecondsRealtime(Time.time * moveSpeed);
         currentCamPos = 2f;
-        yield return null;
+        yield break;
     }
 
     IEnumerator changePosTo3rdCO()
     {
         transform.position = Vector3.Lerp(startPos.position, targetPos.position, Time.time * moveSpeed);
         transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, Time.time * moveSpeed);
-        yield return new WaitForSecondsRealtime(0.25f);
+        yield return new WaitForSecondsRealtime(Time.time * moveSpeed);
         currentCamPos = 3f;
-        yield return null;
+        yield break;
     }
 
     IEnumerator changePosTo4thCO()
     {
         transform.position = Vector3.Lerp(startPos.position, targetPos.position, Time.time * moveSpeed);
         transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, Time.time * moveSpeed);
-        yield return new WaitForSecondsRealtime(0.25f);
+        yield return new WaitForSecondsRealtime(Time.time * moveSpeed);
         currentCamPos = 4f;
-        yield return null;
+        yield break;
     }
 }
