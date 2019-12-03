@@ -13,6 +13,8 @@ public class CameraControl : MonoBehaviour
     private float startTime;
     private float movelength;
     private float distCovered;
+
+    public wall wall;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class CameraControl : MonoBehaviour
         currentCamPos = 1f;
         targetPos.position = transform.position;
         startPos.position = transform.position;
+        wall = FindObjectOfType<wall>();
     }
 
     // Update is called once per frame
@@ -66,6 +69,7 @@ public class CameraControl : MonoBehaviour
                 default:
                     break;
             }
+            wall.UpdateWalls();
         }
 
         if (Input.GetKey(KeyCode.Q))
@@ -99,6 +103,7 @@ public class CameraControl : MonoBehaviour
                 default:
                     break;
             }
+            wall.UpdateWalls();
         }
     }
     IEnumerator changePosTo1stCO()
