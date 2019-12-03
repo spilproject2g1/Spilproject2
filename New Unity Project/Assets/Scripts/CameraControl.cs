@@ -22,118 +22,111 @@ public class CameraControl : MonoBehaviour
         transform.position = new Vector3(camPos[0].transform.position.x, camPos[0].transform.position.y, camPos[0].transform.position.z);
         transform.eulerAngles = new Vector3(35, 45, 0);
         currentCamPos = 1f;
-        targetPos.position = transform.position;
+        targetPos.position = camPos[1].position;
         startPos.position = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        distCovered = (Time.time - startTime) * moveSpeed;
-        startPos.position = transform.position;
-
-        
-
         //change Camera Position
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            switch (currentCamPos)
-            {
-                case 1:
-                    targetPos.position = camPos[1].position;
-                    targetPos.rotation = camPos[1].rotation;
-                    StartCoroutine("changePosTo2ndCO");
-                    break;
-
-                case 2:
-                    targetPos.position = camPos[2].position;
-                    targetPos.rotation = camPos[2].rotation;
-                    StartCoroutine("changePosTo3rdCO");
-                    break;
-
-                case 3:
-                    targetPos.position = camPos[3].position;
-                    targetPos.rotation = camPos[3].rotation;
-                    StartCoroutine("changePosTo4thCO");
-                    break;
-
-                case 4:
-                    targetPos.position = camPos[0].position;
-                    targetPos.rotation = camPos[0].rotation;
-                    StartCoroutine("changePosTo1stCO");
-                    break;
-
-                default:
-                    break;
-            }
+            ChangeCamE();
         }
 
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            switch (currentCamPos)
-            {
-                case 1:
-                    targetPos.position = camPos[3].position;
-                    targetPos.rotation = camPos[3].rotation;
-                    StartCoroutine("changePosTo4thCO");
-                    break;
-
-                case 2:
-                    targetPos.position = camPos[0].position;
-                    targetPos.rotation = camPos[0].rotation;
-                    StartCoroutine("changePosTo1stCO");
-                    break;
-
-                case 3:
-                    targetPos.position = camPos[1].position;
-                    targetPos.rotation = camPos[1].rotation;
-                    StartCoroutine("changePosTo2ndCO");
-                    break;
-
-                case 4:
-                    targetPos.position = camPos[2].position;
-                    targetPos.rotation = camPos[2].rotation;
-                    StartCoroutine("changePosTo3rdCO");
-                    break;
-
-                default:
-                    break;
-            }
+            ChangeCamQ();
         }
     }
-    IEnumerator changePosTo1stCO()
+
+    void ChangeCamE()
     {
-        transform.position = Vector3.Lerp(startPos.position, targetPos.position, Time.time * moveSpeed);
-        transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, Time.time * moveSpeed);
-        yield return new WaitForSecondsRealtime(3f);
-        currentCamPos = 1f;
-        yield break;
+        switch (currentCamPos)
+        {
+            case 1:
+                targetPos = camPos[1];
+                StartCoroutine("changePosTo2ndCO");
+                break;
+
+            case 2:
+                targetPos = camPos[2];
+                StartCoroutine("changePosTo3rdCO");
+                break;
+
+            case 3:
+                targetPos = camPos[3];
+                StartCoroutine("changePosTo4thCO");
+                break;
+
+            case 4:
+                targetPos = camPos[0];
+                StartCoroutine("changePosTo1stCO");
+                break;
+
+            default:
+                break;
+        }
     }
 
-    IEnumerator changePosTo2ndCO()
+    void ChangeCamQ()
     {
-        transform.position = Vector3.Lerp(startPos.position, targetPos.position, Time.time * moveSpeed);
-        transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, Time.time * moveSpeed);
-        yield return new WaitForSecondsRealtime(Time.time * moveSpeed);
-        currentCamPos = 2f;
-        yield break;
-    }
+        switch (currentCamPos)
+        {
+            case 1:
+                targetPos = camPos[3];
+                StartCoroutine("changePosTo4thCO");
+                break;
 
-    IEnumerator changePosTo3rdCO()
-    {
-        transform.position = Vector3.Lerp(startPos.position, targetPos.position, Time.time * moveSpeed);
-        transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, Time.time * moveSpeed);
-        yield return new WaitForSecondsRealtime(Time.time * moveSpeed);
-        currentCamPos = 3f;
-        yield break;
-    }
+            case 2:
+                targetPos = camPos[0];
+                StartCoroutine("changePosTo1stCO");
+                break;
 
-    IEnumerator changePosTo4thCO()
-    {
-        transform.position = Vector3.Lerp(startPos.position, targetPos.position, Time.time * moveSpeed);
-        transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, Time.time * moveSpeed);
-        yield return new WaitForSecondsRealtime(Time.time * moveSpeed);
-        currentCamPos = 4f;
-        yield break;
+            case 3:
+                targetPos = camPos[1];
+                StartCoroutine("changePosTo2ndCO");
+                break;
+
+            case 4:
+                targetPos = camPos[2];
+                StartCoroutine("changePosTo3rdCO");
+                break;
+
+            default:
+                break;
+        }
     }
+        IEnumerator changePosTo1stCO()
+        {
+            transform.position = Vector3.Lerp(startPos.position, targetPos.position, 1f);
+            transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, 1f);
+            currentCamPos = 1f;
+            yield break;
+        }
+
+        IEnumerator changePosTo2ndCO()
+        {    
+            transform.position = Vector3.Lerp(startPos.position, targetPos.position, 1f);
+            transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, 1f);
+            currentCamPos = 2f;
+            yield break;
+        }
+
+        IEnumerator changePosTo3rdCO()
+        {
+            transform.position = Vector3.Lerp(startPos.position, targetPos.position, 1f);
+            transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, 1f);
+            currentCamPos = 3f;
+            yield break;
+        }
+
+        IEnumerator changePosTo4thCO()
+        {
+            transform.position = Vector3.Lerp(startPos.position, targetPos.position, 1f);
+            transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, 1f);
+            currentCamPos = 4f;
+            yield break;
+        }
 }
