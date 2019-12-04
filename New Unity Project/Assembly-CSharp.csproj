@@ -62,7 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\interact.cs" />
+=======
+    <Compile Include="Assets\Scripts\CameraControl.cs" />
+>>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
     <Compile Include="Assets\Scripts\menu.cs" />
     <Compile Include="Assets\Scripts\Player_ControllerV2.cs" />
     <Compile Include="Assets\Scripts\Reset_Scene.cs" />
