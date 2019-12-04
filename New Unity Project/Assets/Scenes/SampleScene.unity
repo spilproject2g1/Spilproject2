@@ -455,104 +455,6 @@ Transform:
 --- !u!1 &1079727833
 GameObject:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1436724038208104250, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_Name
-      value: maniger
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104249, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: canvas
-      value: 
-      objectReference: {fileID: 1733049930}
-    - target: {fileID: 1436724038208104249, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: options.Array.data[1]
-      value: 
-      objectReference: {fileID: 471048946}
-    - target: {fileID: 1436724038208104249, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: options.Array.data[0]
-      value: 
-      objectReference: {fileID: 1887605849}
-    - target: {fileID: 1436724038208104249, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: other.Array.data[2]
-      value: 
-      objectReference: {fileID: 14728534}
-    - target: {fileID: 1436724038208104249, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: other.Array.data[1]
-      value: 
-      objectReference: {fileID: 918432654}
-    - target: {fileID: 1436724038208104249, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: other.Array.data[0]
-      value: 
-      objectReference: {fileID: 131967354}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 805.7205
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 459.8259
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -514.65265
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436724038208104248, guid: 0ff30929cf50155449a44b15776a5786,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0ff30929cf50155449a44b15776a5786, type: 3}
-=======
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -630,7 +532,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
->>>>>>> b2d6cca1eb0c54babd9c613b675d7489baaf5e24
 --- !u!1001 &1108141570
 PrefabInstance:
   m_ObjectHideFlags: 0
