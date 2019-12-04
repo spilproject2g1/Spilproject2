@@ -20,11 +20,11 @@ public class wall : MonoBehaviour
     {
         camara = FindObjectOfType<Camera>().transform;
         walls = FindObjectsOfType<wall>();
-        
+        UpdateWalls();
     }
 
     // Update is called once per frame
-    void Update()
+    public void UpdateWalls()
     {
         for (int i = 0; i < walls.Length; i++)
         {
@@ -45,7 +45,7 @@ public class wall : MonoBehaviour
         hits.Clear();
     }
 
-    void ChangeSpright(bool _index)
+    public void ChangeSpright(bool _index)
     {
         GetComponent<SpriteRenderer>().enabled =_index;
     }
