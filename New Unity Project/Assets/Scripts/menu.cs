@@ -56,10 +56,6 @@ public class menu : MonoBehaviour
             case 3:
                 Application.Quit();
                 break;
-            case 4:
-                Time.timeScale = 1;
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                break;
             default:
                 Debug.Log("that input is not set");
                 break;
