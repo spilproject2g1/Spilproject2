@@ -130,6 +130,10 @@ GameObject:
   m_Component:
   - component: {fileID: 133370432}
   - component: {fileID: 133370431}
+<<<<<<< HEAD
+  - component: {fileID: 133370433}
+=======
+>>>>>>> cfeba03f8dec1994c4160615771076a119f0bfa0
   - component: {fileID: 133370430}
   m_Layer: 0
   m_Name: Main Camera
@@ -509,10 +513,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 306550366}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
+  m_Script: {fileID: 11500000, guid: 74e54837cfd94c047907833145cdc74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camPos:
+  - {fileID: 985856898}
+  - {fileID: 617882272}
+  - {fileID: 1766215640}
+  - {fileID: 842727156}
+  startPos: {fileID: 133370432}
+  targetPos: {fileID: 617882272}
+  currentCamPos: 1
+  moveSpeed: 0
+=======
   m_Script: {fileID: 11500000, guid: 0874c38bca40ba84db16b7a294221227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 1899832771}
+>>>>>>> cfeba03f8dec1994c4160615771076a119f0bfa0
 --- !u!1 &617882271
 GameObject:
   m_ObjectHideFlags: 0
