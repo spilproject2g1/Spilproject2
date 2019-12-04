@@ -13,6 +13,8 @@ public class Player_ControllerV2 : MonoBehaviour
 
     public float speed = 1;
 
+    public bool canInteract = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +25,15 @@ public class Player_ControllerV2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.LookAt(new Vector3(camara.position.x,transform.position.y,camara.position.z));
         movement = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical")) * speed * Time.deltaTime;
         movement = camara.rotation * movement;
         movement.y = rb.velocity.y;
         rb.velocity = movement;
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K)&&canInteract)
         {
-            //interract
+            Debug.Log("interrected");
         }
     }
 }

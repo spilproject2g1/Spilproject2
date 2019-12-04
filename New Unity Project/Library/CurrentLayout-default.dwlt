@@ -114,11 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 685, y: 494}
   m_MaxSize: {x: 14006, y: 14044}
   vertical: 0
-<<<<<<< HEAD
   controlID: 116
-=======
-  controlID: 147
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,11 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-<<<<<<< HEAD
   controlID: 51
-=======
-  controlID: 85
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,11 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 222}
   m_MaxSize: {x: 8006, y: 4022}
   vertical: 0
-<<<<<<< HEAD
   controlID: 52
-=======
-  controlID: 62
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -324,17 +312,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-<<<<<<< HEAD
     m_HBaseRangeMin: -383
     m_HBaseRangeMax: 383
     m_VBaseRangeMin: -215.5
     m_VBaseRangeMax: 215.5
-=======
-    m_HBaseRangeMin: -306.4
-    m_HBaseRangeMax: 306.4
-    m_VBaseRangeMin: -172.40001
-    m_VBaseRangeMax: 172.40001
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -370,11 +351,7 @@ MonoBehaviour:
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-<<<<<<< HEAD
   m_LastWindowPixelSize: {x: 778, y: 448}
-=======
-  m_LastWindowPixelSize: {x: 972.5, y: 560}
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -410,11 +387,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-<<<<<<< HEAD
       m_ExpandedIDs: 6afbffff
-=======
-      m_ExpandedIDs: 26f6ffff58f6ffff16f9ffff
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -474,15 +447,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
-=======
-    m_Target: {x: 0.21642113, y: 4.413803, z: 0.37062645}
-    speed: 2
-    m_Value: {x: 0.21642113, y: 4.413803, z: 0.37062645}
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -511,7 +478,6 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-<<<<<<< HEAD
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
@@ -519,15 +485,6 @@ MonoBehaviour:
     m_Target: 11.365492
     speed: 2
     m_Value: 11.365492
-=======
-    m_Target: {x: -0.3332086, y: -0.34248638, z: 0.13138501, w: -0.8685802}
-    speed: 2
-    m_Value: {x: -0.33320552, y: -0.34248325, z: 0.1313838, w: -0.86857224}
-  m_Size:
-    m_Target: 37.469288
-    speed: 2
-    m_Value: 37.469288
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -682,34 +639,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
     - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/Scenes
-=======
-    - Assets/Scripts
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Scripts
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Skole\Github\Unity-Build\New Unity Project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
     m_SelectedIDs: c22e0000
     m_LastClickedID: 11970
     m_ExpandedIDs: 00000000a62c000000ca9a3b
-=======
-    m_SelectedIDs: 20340000
-    m_LastClickedID: 13344
-    m_ExpandedIDs: 000000001433000000ca9a3b
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -737,11 +680,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
     m_ExpandedIDs: 00000000a62c0000
-=======
-    m_ExpandedIDs: 0000000014330000
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -768,11 +707,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
-=======
-    m_HadKeyboardFocusLastEvent: 1
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -972,55 +907,10 @@ MonoBehaviour:
     height: 752
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
-<<<<<<< HEAD
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_LockTracker:
     m_IsLocked: 0
-=======
-  m_ObjectsLockedBeforeSerialization:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_InstanceIDsLockedBeforeSerialization: 6c360000
-  m_LockTracker:
-    m_IsLocked: 1
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   m_PreviewResizer:
     m_CachedPref: 160
     m_ControlHash: -371814159

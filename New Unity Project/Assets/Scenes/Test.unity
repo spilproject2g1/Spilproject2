@@ -131,13 +131,9 @@ GameObject:
   - component: {fileID: 133370432}
   - component: {fileID: 133370431}
 <<<<<<< HEAD
-<<<<<<< HEAD
   - component: {fileID: 133370433}
 =======
 >>>>>>> cfeba03f8dec1994c4160615771076a119f0bfa0
-=======
-  - component: {fileID: 133370433}
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   - component: {fileID: 133370430}
   m_Layer: 0
   m_Name: Main Camera
@@ -211,7 +207,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 45, z: 0}
-<<<<<<< HEAD
 --- !u!1001 &222760850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -349,15 +344,11 @@ MonoBehaviour:
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
 --- !u!114 &249110800
-=======
---- !u!114 &133370433
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 249110798}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -436,11 +427,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
 <<<<<<< HEAD
-=======
-  m_GameObject: {fileID: 133370429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   m_Script: {fileID: 11500000, guid: 74e54837cfd94c047907833145cdc74d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -453,15 +439,12 @@ MonoBehaviour:
   targetPos: {fileID: 617882272}
   currentCamPos: 1
   moveSpeed: 0
-<<<<<<< HEAD
 =======
   m_Script: {fileID: 11500000, guid: 0874c38bca40ba84db16b7a294221227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 1899832771}
 >>>>>>> cfeba03f8dec1994c4160615771076a119f0bfa0
-=======
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!1 &617882271
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +475,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 30, y: -45, z: 0}
-<<<<<<< HEAD
 --- !u!1 &690991856 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5864141473784908249, guid: 02d7069ce17001b4784046e1fb531efb,
@@ -683,8 +665,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02d7069ce17001b4784046e1fb531efb, type: 3}
-=======
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!1 &842727155
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,11 +689,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842727155}
   m_LocalRotation: {x: 0.09904577, y: 0.89239913, z: -0.23911765, w: 0.3696438}
-<<<<<<< HEAD
   m_LocalPosition: {x: 7.89, y: 12, z: -16.98}
-=======
-  m_LocalPosition: {x: -13, y: 12, z: 13}
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -762,10 +738,7 @@ Transform:
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children:
   - {fileID: 1079727834}
-<<<<<<< HEAD
   - {fileID: 306550367}
-=======
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -890,15 +863,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &998091648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5864141472960331553, guid: 02d7069ce17001b4784046e1fb531efb,
     type: 3}
   m_PrefabInstance: {fileID: 738269748}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!1 &1079727833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1401,7 +1371,6 @@ PrefabInstance:
     - {fileID: 107425105796885118, guid: 6dee29dbb40357f47a784ac48e6b083c, type: 3}
     - {fileID: 5731917054767106692, guid: 6dee29dbb40357f47a784ac48e6b083c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6dee29dbb40357f47a784ac48e6b083c, type: 3}
-<<<<<<< HEAD
 --- !u!1 &1454996267 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5864141473201045886, guid: 02d7069ce17001b4784046e1fb531efb,
@@ -1414,8 +1383,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 738269748}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!1 &1766215639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,7 +1443,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1800818963 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5864141473140826129, guid: 02d7069ce17001b4784046e1fb531efb,
@@ -1489,8 +1455,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 738269748}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!1 &1899832770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1525,10 +1489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1000
-<<<<<<< HEAD
   canInteract: 0
-=======
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!54 &1899832772
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1613,17 +1574,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899832770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
   m_LocalPosition: {x: 0.45145, y: 2.29, z: 0.19251}
-=======
-  m_LocalPosition: {x: 0.45145, y: 0.59518, z: 0.19251}
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!114 &1954200076 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1436724038208104255, guid: 0ff30929cf50155449a44b15776a5786,
@@ -1648,8 +1604,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a89e2f0cbe841264ca8d4457b5ec3902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> parent of adadaf7... Merge branch 'master' of https://github.com/spilproject2g1/Unity-Build
 --- !u!1001 &3369909999722529049
 PrefabInstance:
   m_ObjectHideFlags: 0
