@@ -8,34 +8,29 @@ public class CameraControl : MonoBehaviour
     public Transform startPos;
     public Transform targetPos;
 
+    public bool isMoving;
     public float currentCamPos;
-    public float moveSpeed;
-    private float startTime;
-    private float movelength;
-    private float distCovered;
     // Start is called before the first frame update
     void Start()
     {
-        movelength = Vector3.Distance(startPos.position, targetPos.position);
-        startTime = Time.time;
-        moveSpeed = 0.01f;
-        transform.position = new Vector3(camPos[0].transform.position.x, camPos[0].transform.position.y, camPos[0].transform.position.z);
-        transform.eulerAngles = new Vector3(35, 45, 0);
+        isMoving = false;
+        transform.position = camPos[0].position;
+        transform.rotation = camPos[0].rotation;
+        startPos.position = transform.position;
         currentCamPos = 1f;
         targetPos.position = camPos[1].position;
-        startPos.position = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         //change Camera Position
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && isMoving == false)
         {
             ChangeCamE();
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && isMoving == false)
         {
             ChangeCamQ();
         }
@@ -47,22 +42,30 @@ public class CameraControl : MonoBehaviour
         {
             case 1:
                 targetPos = camPos[1];
-                StartCoroutine("changePosTo2ndCO");
+                StartCoroutine("MoveToPosition");
+                new WaitForSecondsRealtime(2.5f);
+                currentCamPos = 2;
                 break;
 
             case 2:
                 targetPos = camPos[2];
-                StartCoroutine("changePosTo3rdCO");
+                StartCoroutine("MoveToPosition");
+                new WaitForSecondsRealtime(2.5f);
+                currentCamPos = 3;
                 break;
 
             case 3:
                 targetPos = camPos[3];
-                StartCoroutine("changePosTo4thCO");
+                StartCoroutine("MoveToPosition");
+                new WaitForSecondsRealtime(2.5f);
+                currentCamPos = 4;
                 break;
 
             case 4:
                 targetPos = camPos[0];
-                StartCoroutine("changePosTo1stCO");
+                StartCoroutine("MoveToPosition");
+                new WaitForSecondsRealtime(2.5f);
+                currentCamPos = 1;
                 break;
 
             default:
@@ -76,22 +79,30 @@ public class CameraControl : MonoBehaviour
         {
             case 1:
                 targetPos = camPos[3];
-                StartCoroutine("changePosTo4thCO");
+                StartCoroutine("MoveToPosition");
+                new WaitForSecondsRealtime(2.5f);
+                currentCamPos = 4;
                 break;
 
             case 2:
                 targetPos = camPos[0];
-                StartCoroutine("changePosTo1stCO");
+                StartCoroutine("MoveToPosition");
+                new WaitForSecondsRealtime(2.5f);
+                currentCamPos = 1;
                 break;
 
             case 3:
                 targetPos = camPos[1];
-                StartCoroutine("changePosTo2ndCO");
+                StartCoroutine("MoveToPosition");
+                new WaitForSecondsRealtime(2.5f);
+                currentCamPos = 2;
                 break;
 
             case 4:
                 targetPos = camPos[2];
-                StartCoroutine("changePosTo3rdCO");
+                StartCoroutine("MoveToPosition");
+                new WaitForSecondsRealtime(2.5f);
+                currentCamPos = 3;
                 break;
 
             default:
@@ -129,4 +140,22 @@ public class CameraControl : MonoBehaviour
             currentCamPos = 4f;
             yield break;
         }
+    public IEnumerator MoveToPosition()
+    {
+        isMoving = true;
+        var currentPos = transform.position;
+        var currentRot = transform.rotation;
+        var TargetPos = targetPos.position;
+        var TargetRot = targetPos.rotation;
+        var timeToMove = 2.5f;
+        var t = 0f;
+        while (t < 1)
+        {
+            t += Time.deltaTime / timeToMove;
+            transform.position = Vector3.Lerp(currentPos, TargetPos , t);
+            transform.rotation = Quaternion.Lerp(currentRot, TargetRot, t);
+            yield return null;
+        }
+        isMoving = false;
+    }
 }
