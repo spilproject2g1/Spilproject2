@@ -43,28 +43,28 @@ public class CameraControl : MonoBehaviour
             case 1:
                 targetPos = camPos[1];
                 StartCoroutine("MoveToPosition");
-                new WaitForSecondsRealtime(2.5f);
+                new WaitForSecondsRealtime(1.5F);
                 currentCamPos = 2;
                 break;
 
             case 2:
                 targetPos = camPos[2];
                 StartCoroutine("MoveToPosition");
-                new WaitForSecondsRealtime(2.5f);
+                new WaitForSecondsRealtime(1.5F);
                 currentCamPos = 3;
                 break;
 
             case 3:
                 targetPos = camPos[3];
                 StartCoroutine("MoveToPosition");
-                new WaitForSecondsRealtime(2.5f);
+                new WaitForSecondsRealtime(1.5F);
                 currentCamPos = 4;
                 break;
 
             case 4:
                 targetPos = camPos[0];
                 StartCoroutine("MoveToPosition");
-                new WaitForSecondsRealtime(2.5f);
+                new WaitForSecondsRealtime(1.5F);
                 currentCamPos = 1;
                 break;
 
@@ -80,28 +80,28 @@ public class CameraControl : MonoBehaviour
             case 1:
                 targetPos = camPos[3];
                 StartCoroutine("MoveToPosition");
-                new WaitForSecondsRealtime(2.5f);
+                new WaitForSecondsRealtime(1.5F);
                 currentCamPos = 4;
                 break;
 
             case 2:
                 targetPos = camPos[0];
                 StartCoroutine("MoveToPosition");
-                new WaitForSecondsRealtime(2.5f);
+                new WaitForSecondsRealtime(1.5F);
                 currentCamPos = 1;
                 break;
 
             case 3:
                 targetPos = camPos[1];
                 StartCoroutine("MoveToPosition");
-                new WaitForSecondsRealtime(2.5f);
+                new WaitForSecondsRealtime(1.5F);
                 currentCamPos = 2;
                 break;
 
             case 4:
                 targetPos = camPos[2];
                 StartCoroutine("MoveToPosition");
-                new WaitForSecondsRealtime(2.5f);
+                new WaitForSecondsRealtime(1.5f);
                 currentCamPos = 3;
                 break;
 
@@ -109,37 +109,6 @@ public class CameraControl : MonoBehaviour
                 break;
         }
     }
-        IEnumerator changePosTo1stCO()
-        {
-            transform.position = Vector3.Lerp(startPos.position, targetPos.position, 1f);
-            transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, 1f);
-            currentCamPos = 1f;
-            yield break;
-        }
-
-        IEnumerator changePosTo2ndCO()
-        {    
-            transform.position = Vector3.Lerp(startPos.position, targetPos.position, 1f);
-            transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, 1f);
-            currentCamPos = 2f;
-            yield break;
-        }
-
-        IEnumerator changePosTo3rdCO()
-        {
-            transform.position = Vector3.Lerp(startPos.position, targetPos.position, 1f);
-            transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, 1f);
-            currentCamPos = 3f;
-            yield break;
-        }
-
-        IEnumerator changePosTo4thCO()
-        {
-            transform.position = Vector3.Lerp(startPos.position, targetPos.position, 1f);
-            transform.rotation = Quaternion.Lerp(startPos.rotation, targetPos.rotation, 1f);
-            currentCamPos = 4f;
-            yield break;
-        }
     public IEnumerator MoveToPosition()
     {
         isMoving = true;
@@ -147,7 +116,7 @@ public class CameraControl : MonoBehaviour
         var currentRot = transform.rotation;
         var TargetPos = targetPos.position;
         var TargetRot = targetPos.rotation;
-        var timeToMove = 2.5f;
+        var timeToMove = 1.5f;
         var t = 0f;
         while (t < 1)
         {
