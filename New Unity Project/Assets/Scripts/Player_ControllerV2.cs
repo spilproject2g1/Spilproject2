@@ -28,7 +28,7 @@ public class Player_ControllerV2 : MonoBehaviour
         movement.y = rb.velocity.y;
         rb.velocity = movement;
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             //interract
         }
