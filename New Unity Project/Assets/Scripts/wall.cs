@@ -20,11 +20,11 @@ public class wall : MonoBehaviour
     {
         camara = FindObjectOfType<Camera>().transform;
         walls = FindObjectsOfType<wall>();
-        
+        UpdateWalls();
     }
 
     // Update is called once per frame
-    void Update()
+    public void UpdateWalls()
     {
         for (int i = 0; i < walls.Length; i++)
         {
