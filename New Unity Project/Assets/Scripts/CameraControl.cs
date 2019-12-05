@@ -8,8 +8,6 @@ public class CameraControl : MonoBehaviour
     public Transform startPos;
     public Transform targetPos;
 
-    public wall wall;
-
     public bool isMoving;
     public float currentCamPos;
     // Start is called before the first frame update
@@ -128,6 +126,5 @@ public class CameraControl : MonoBehaviour
             yield return null;
         }
         isMoving = false;
-        wall.UpdateWalls();
     }
 }
