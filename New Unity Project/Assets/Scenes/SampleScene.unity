@@ -876,6 +876,7 @@ MonoBehaviour:
   canInteract: 0
   isInteracting: 0
   inspectCam: {fileID: 807859487}
+  interactableObject: {fileID: 30035199}
 --- !u!1001 &1061412197
 PrefabInstance:
   m_ObjectHideFlags: 0

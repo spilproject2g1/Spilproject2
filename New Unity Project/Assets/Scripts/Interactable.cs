@@ -8,6 +8,7 @@ public class Interactable : MonoBehaviour
     public bool isInteracting = false;
     private Player_ControllerV2 playerCtrl;
     public GameObject inspectCam;
+    public GameObject interactableObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,13 +19,17 @@ public class Interactable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x - playerCtrl.transform.position.x < 2.5f && transform.position.z - playerCtrl.transform.position.z < 2.5f)
+        if(isInteracting == false)
         {
-            canInteract = true;
-        }
-        else
-        {
-            canInteract = false;
+            if (transform.position.x - playerCtrl.transform.position.x < 2.5f && transform.position.z - playerCtrl.transform.position.z < 2.5f)
+            {
+                canInteract = true;
+            }
+            else
+            {
+                canInteract = false;
+            }
+
         }
 
         if (canInteract == true)
@@ -34,12 +39,30 @@ public class Interactable : MonoBehaviour
                 interact();
             }
         }
+        if (isInteracting == true)
+        {
+            if(Input.GetKeyDown(KeyCode.C))
+            {
+                unInteract();
+            }
+
+        }
     }
 
     void interact()
     {
         isInteracting = true;
         inspectCam.gameObject.SetActive(true);
+        interactableObject.gameObject.SetActive(true);
+        canInteract = false;
+        Debug.Log("interacting");
 
+    }
+    void unInteract()
+    {
+        inspectCam.gameObject.SetActive(false);
+        interactableObject.gameObject.SetActive(false);
+        isInteracting = false;
+        Debug.Log("uninteracting");
     }
 }
