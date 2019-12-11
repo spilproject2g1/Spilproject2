@@ -304,6 +304,7 @@ MonoBehaviour:
   - {fileID: 842727156}
   startPos: {fileID: 133370432}
   targetPos: {fileID: 1784713836}
+  wall: {fileID: 3369909999722529050}
   isMoving: 0
   currentCamPos: 1
 --- !u!1 &539708272 stripped
@@ -1749,3 +1750,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dee29dbb40357f47a784ac48e6b083c, type: 3}
+--- !u!114 &3369909999722529050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1206746354558951399, guid: 6dee29dbb40357f47a784ac48e6b083c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3369909999722529049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c37fa5eaf50b1c448ae80d4373c96bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

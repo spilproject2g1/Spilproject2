@@ -24,7 +24,7 @@ public class wall : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void UpdateWalls()
     {
         for (int i = 0; i < walls.Length; i++)
         {
