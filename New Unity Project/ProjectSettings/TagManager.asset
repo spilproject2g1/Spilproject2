@@ -43,3 +43,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 3603151291
+    locked: 0
+  - name: Floor
+    uniqueID: 2538824623
+    locked: 0
+  - name: Walls
+    uniqueID: 1864942975
+    locked: 0
+  - name: Player
+    uniqueID: 1717467915
+    locked: 0
