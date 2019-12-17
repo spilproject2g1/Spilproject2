@@ -8,6 +8,7 @@ public class CameraControl : MonoBehaviour
     public Transform startPos;
     public Transform targetPos;
     public wall wall;
+    public GameObject Player;
     public bool isMoving;
     public float currentCamPos;
     // Start is called before the first frame update
@@ -24,6 +25,8 @@ public class CameraControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Player.transform.rotation = transform.rotation;
         //change Camera Position
         if (Input.GetKeyDown(KeyCode.E) && isMoving == false)
         {

@@ -263,3 +263,7 @@ C:\Users\Andreas H.C\Documents\GitHub\Unity-Build\New Unity Project\obj\Debug\As
 C:\Users\Andreas H.C\Documents\GitHub\Unity-Build\New Unity Project\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Andreas H.C\Documents\GitHub\Unity-Build\New Unity Project\obj\Debug\Assembly-CSharp.dll
 C:\Users\Andreas H.C\Documents\GitHub\Unity-Build\New Unity Project\obj\Debug\Assembly-CSharp.pdb
+D:\Skole\Github\Unity-Build\New Unity Project\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\Skole\Github\Unity-Build\New Unity Project\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+D:\Skole\Github\Unity-Build\New Unity Project\obj\Debug\Assembly-CSharp.dll
+D:\Skole\Github\Unity-Build\New Unity Project\obj\Debug\Assembly-CSharp.pdb
